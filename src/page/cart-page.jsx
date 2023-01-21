@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import { Link } from 'react-router-dom';
 import Footer from '../component/layout/footer';
-import Header from '../component/layout/header';
+import Header from '../component/layout/header-2';
 import PageHeader from '../component/layout/page-header';
 import SelectCountry from '../component/sidebar/select/select-country';
 import SelectProvency from '../component/sidebar/select/select-provency';

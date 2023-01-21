@@ -30,8 +30,8 @@ function App() {
     <BrowserRouter>
       <ScrollToTop />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="index-2" element={<HomeTwo />} />
+        <Route path="index-2" element={<Home />} />
+        <Route path="/" element={<HomeTwo />} />
         <Route path="about" element={<AboutPage />} />
         <Route path="jaqpot" element={<JaqpotPage />} />
         <Route path="game-list" element={<GameList />} />

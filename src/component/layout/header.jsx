@@ -53,6 +53,7 @@ const Header = () => {
             <div className="logo">
               <Link to="/">
                 <img src="assets/images/logo/logo.png" alt="logo" />
+                
               </Link>
             </div>
           </div>
@@ -202,12 +203,12 @@ const Header = () => {
                       <NavLink to="/contact">Contact</NavLink>
                     </li>
                   </ul>
-                  <Link to="/login" className="login">
+                  {/* <Link to="/login" className="login">
                     <i className="icofont-user"></i> <span>LOG IN</span>{" "}
                   </Link>
                   <Link to="/signup" className="signup">
                     <i className="icofont-users"></i> <span>SIGN UP</span>
-                  </Link>
+                  </Link> */}
 
                   <div
                     className={`header-bar d-lg-none ${

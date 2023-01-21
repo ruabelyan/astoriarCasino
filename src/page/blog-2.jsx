@@ -4,7 +4,7 @@ import { Autoplay, Navigation } from "swiper";
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import Footer from "../component/layout/footer";
-import Header from "../component/layout/header";
+import Header from "../component/layout/header-2";
 import PageHeader from "../component/layout/page-header";
 import PaginationTwo from "../component/sidebar/pagination-2";
 import ArchiveWidget from "../component/sidebar/widget/archive-widget";

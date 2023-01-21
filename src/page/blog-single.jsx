@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import Footer from '../component/layout/footer';
-import Header from '../component/layout/header';
+import Header from '../component/layout/header-2';
 import PageHeader from '../component/layout/page-header';
 import ArchiveWidget from '../component/sidebar/widget/archive-widget';
 import ArticlePagination from '../component/sidebar/widget/article-pagination';

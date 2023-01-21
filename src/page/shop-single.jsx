@@ -1,14 +1,14 @@
 import React, { Fragment, useState } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Navigation } from "swiper";
+import { Swiper, SwiperSlide } from 'swiper/react';
 
 import Footer from '../component/layout/footer';
-import Header from '../component/layout/header';
+import Header from '../component/layout/header-2';
 import PageHeader from '../component/layout/page-header';
+import RatingTwo from '../component/sidebar/rating-2';
 import RecentProduct from '../component/sidebar/widget/recent-product';
 import SearchWidget from '../component/sidebar/widget/search-widget';
 import ShopcateWidget from '../component/sidebar/widget/shopcate-widget';
-import RatingTwo from '../component/sidebar/rating-2';
 
 
 
