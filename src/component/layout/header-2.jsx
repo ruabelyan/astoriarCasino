@@ -318,7 +318,7 @@ const HeaderTwo = () => {
 
   const [selected, setSelected] = useState({
     value: defaultLang,
-    label: options.find((option) => option.value === defaultLang).label,
+    label: options.find((option) => option.value === defaultLang)?.label,
   });
 
   console.log(selected);
