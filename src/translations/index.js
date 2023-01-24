@@ -3,28 +3,42 @@ export const resources = {
     translation: {
       home: "Home",
       contact: "Contact",
-      features: "Features",
+      news: "News",
       blog: "Blog",
-      shop:'Shop'
+      about:'About',
+      photos: "Photos",
     },
   },
   ru: {
     translation: {
-      home: "Домой",
+      home: "Главный",
       contact: "Контакты",
-      features: "Функции",
+      news: "Новости",
       blog: "Блог",
-      shop:'????'
+      photos: "Фото",
+      about:'О Нас',
 
     },
   },
   arm: {
     translation: {
-      home: "Տուն",
+      home: "Գլխավոր",
       contact: "Կոնտակտներ",
-      features: "Ֆունկցիաներ",
+      news: "Նորություններ",
       blog: "Բլոգ",
-      shop:'???'
+      photos: "Նկարներ",
+      about:'Մեր մասին',
+
+    },
+  },
+  ir: {
+    translation: {
+      home: "صفحه اصلی",
+      contact: "مخاطب",
+      news: "اخبار",
+      blog: "وبلاگ",
+      photos: "در باره",
+      about:'عکس ها',
 
     },
   },
