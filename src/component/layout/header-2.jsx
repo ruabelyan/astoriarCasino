@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Link, NavLink } from "react-router-dom";
 import Select from "react-select";
@@ -336,6 +336,13 @@ const HeaderTwo = () => {
     }
   });
 
+  useEffect(() => {
+    if (!defaultLang) {
+      localStorage.setItem("language", "arm");
+      i18n.changeLanguage(options[1].value);
+    }
+  }, [defaultLang]);
+
   return (
     <header
       className={`header-section style2 ${
@@ -405,7 +412,7 @@ const HeaderTwo = () => {
                       >
                          {t("features")}
                       </a> */}
-                      {/* <ul className="submenu dropdown-menu">
+                    {/* <ul className="submenu dropdown-menu">
                         <li>
                           <NavLink to="/about">About</NavLink>
                         </li>
