@@ -375,7 +375,7 @@ const HeaderTwo = () => {
                       <NavLink to="/game-list">{t("news")}</NavLink>
                     </li>
                     <li>
-                      <NavLink to="/blog">{t("photos")}</NavLink>
+                      <NavLink to="/blog">{t("gallery")}</NavLink>
                     </li>
                     <li>
                       <NavLink to="/about">{t("about")}</NavLink>

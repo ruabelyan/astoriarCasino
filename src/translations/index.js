@@ -4,9 +4,13 @@ export const resources = {
       home: "Home",
       contact: "Contact",
       news: "News",
-      blog: "Blog",
-      about:'About',
+      gallery: "Gallery",
+      about: "About",
       photos: "Photos",
+      readMore: "Read more",
+      phoneNumber: "Phone Number",
+      address: "Address",
+      email: "Email",
     },
   },
   ru: {
@@ -14,10 +18,9 @@ export const resources = {
       home: "Главный",
       contact: "Контакты",
       news: "Новости",
-      blog: "Блог",
+      gallery: "Блог",
       photos: "Фото",
-      about:'О Нас',
-
+      about: "О Нас",
     },
   },
   arm: {
@@ -25,10 +28,9 @@ export const resources = {
       home: "Գլխավոր",
       contact: "Կոնտակտներ",
       news: "Նորություններ",
-      blog: "Բլոգ",
+      gallery: "Բլոգ",
       photos: "Նկարներ",
-      about:'Մեր մասին',
-
+      about: "Մեր մասին",
     },
   },
   ir: {
@@ -36,10 +38,9 @@ export const resources = {
       home: "صفحه اصلی",
       contact: "مخاطب",
       news: "اخبار",
-      blog: "وبلاگ",
+      gallery: "وبلاگ",
       photos: "در باره",
-      about:'عکس ها',
-
+      about: "عکس ها",
     },
   },
 };

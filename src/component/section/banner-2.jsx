@@ -6,6 +6,14 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 const bannerList = [
     {
+        bgImg: 'assets/images/banner/bg.jpg',
+        titleh3: 'the best website',
+        titleh2: 'Genuine Money Transaction',
+        titleh1: 'Online Casino',
+        desc: 'Assertively communicate an expanded array of mindshare rather than diverse technologies for magnetic applications eamlessly virtual then Conveniently monetize synergistic human capital',
+        btnText: 'join us today',
+    },
+    {
         bgImg: 'assets/images/banner/bg-2.jpg',
         titleh3: 'the best website',
         titleh2: 'Genuine Money Transaction',
