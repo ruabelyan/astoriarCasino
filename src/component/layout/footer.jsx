@@ -202,7 +202,8 @@ const Footer = () => {
             <div className="col-12">
               <div className="footer-bottom-content text-center">
                 <p>
-                  &copy;2022 <Link to="/">Casino</Link> - {t("rightsReserved")}
+                  &copy;2022 <Link to="/">{t("casino")}</Link> -{" "}
+                  {t("rightsReserved")}
                 </p>
               </div>
             </div>
