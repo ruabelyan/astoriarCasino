@@ -184,7 +184,8 @@ const Footer = () => {
                       </div>
                       <button type="submit" className="default-button">
                         <span>
-                          Send Massage <i className="icofont-circled-right"></i>
+                          {t("sendMessage")}{" "}
+                          <i className="icofont-circled-right"></i>
                         </span>
                       </button>
                     </form>
@@ -201,7 +202,7 @@ const Footer = () => {
             <div className="col-12">
               <div className="footer-bottom-content text-center">
                 <p>
-                  &copy;2022 <Link to="/">Casino</Link> - All Rights Reserved.
+                  &copy;2022 <Link to="/">Casino</Link> - {t("rightsReserved")}
                 </p>
               </div>
             </div>

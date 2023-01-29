@@ -53,7 +53,6 @@ const Header = () => {
             <div className="logo">
               <Link to="/">
                 <img src="assets/images/logo/logo.png" alt="logo" />
-                
               </Link>
             </div>
           </div>
@@ -101,10 +100,10 @@ const Header = () => {
                       </a>
                       <ul className="submenu dropdown-menu">
                         <li>
-                          <NavLink to="/">Home Page One</NavLink>
+                          <NavLink to="/">{t("home1")}</NavLink>
                         </li>
                         <li>
-                          <NavLink to="/index-2">Home Page Two</NavLink>
+                          <NavLink to="/index-2">{t("home2")}</NavLink>
                         </li>
                       </ul>
                     </li>
@@ -116,7 +115,7 @@ const Header = () => {
                         aria-haspopup="true"
                         aria-expanded="false"
                       >
-                        Features
+                        {t("features")}
                       </a>
                       <ul className="submenu dropdown-menu">
                         <li>
@@ -163,7 +162,7 @@ const Header = () => {
                         aria-haspopup="true"
                         aria-expanded="false"
                       >
-                        Blog
+                        {t("blog")}
                       </a>
                       <ul className="submenu dropdown-menu">
                         <li>
@@ -185,22 +184,25 @@ const Header = () => {
                         aria-haspopup="true"
                         aria-expanded="false"
                       >
-                        Shop
+                        {t("shop")}
                       </a>
                       <ul className="submenu dropdown-menu">
                         <li>
-                          <NavLink to="/shop">shop</NavLink>
+                          <NavLink to="/shop"> {t("shop")}</NavLink>
                         </li>
                         <li>
-                          <NavLink to="/shop-single">Shop Details</NavLink>
+                          <NavLink to="/shop-single">
+                            {" "}
+                            {t("shopDetails")}
+                          </NavLink>
                         </li>
                         <li>
-                          <NavLink to="/cart-page">Cart Page</NavLink>
+                          <NavLink to="/cart-page"> {t("cardPage")}</NavLink>
                         </li>
                       </ul>
                     </li>
                     <li>
-                      <NavLink to="/contact">Contact</NavLink>
+                      <NavLink to="/contact"> {t("contact")}</NavLink>
                     </li>
                   </ul>
                   {/* <Link to="/login" className="login">
