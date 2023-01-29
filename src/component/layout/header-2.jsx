@@ -369,22 +369,10 @@ const HeaderTwo = () => {
                 <div className="menu-area">
                   <ul className={`menu ${menuToggle ? "active" : ""}`}>
                     <li>
-                      <NavLink to="/home">{t("home")}</NavLink>
+                      <NavLink to="/">{t("home")}</NavLink>
                     </li>
                     <li>
                       <NavLink to="/news">{t("news")}</NavLink>
-                    </li>
-                    <li>
-                      <NavLink to="/photos">{t("photos")}</NavLink>
-                    </li>
-                    <li>
-                      <NavLink to="/about">{t("aboutUs")}</NavLink>
-                    </li>
-                    <li>
-                      <NavLink to="/contacts">{t("contacts")}</NavLink>
-                    </li>
-                    <li>
-                      <NavLink to="/game-list">{t("news")}</NavLink>
                     </li>
                     <li>
                       <NavLink to="/blog">{t("gallery")}</NavLink>
