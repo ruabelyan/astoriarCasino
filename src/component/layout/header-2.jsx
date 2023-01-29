@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Link, NavLink } from "react-router-dom";
 import Select from "react-select";
@@ -336,6 +336,13 @@ const HeaderTwo = () => {
     }
   });
 
+  useEffect(() => {
+    if (!defaultLang) {
+      localStorage.setItem("language", "arm");
+      i18n.changeLanguage(options[1].value);
+    }
+  }, [defaultLang]);
+
   return (
     <header
       className={`header-section style2 ${
@@ -356,7 +363,7 @@ const HeaderTwo = () => {
               <div className="header-wrapper justify-content-lg-end">
                 <div className="mobile-logo d-lg-none">
                   <Link to="/">
-                    <img src="assets/images/logo/mainLigo" alt="logo" />
+                    <img src={logo} alt="logo" />
                   </Link>
                 </div>
                 <div className="menu-area">
@@ -375,6 +382,18 @@ const HeaderTwo = () => {
                     </li>
                     <li>
                       <NavLink to="/contacts">{t("contacts")}</NavLink>
+                    </li>
+                    <li>
+                      <NavLink to="/game-list">{t("news")}</NavLink>
+                    </li>
+                    <li>
+                      <NavLink to="/blog">{t("gallery")}</NavLink>
+                    </li>
+                    <li>
+                      <NavLink to="/about">{t("about")}</NavLink>
+                    </li>
+                    <li>
+                      <NavLink to="/contact">{t("contact")}</NavLink>
                     </li>
                     {/* <li className="menu-item-has-children">
                       <a
@@ -403,10 +422,9 @@ const HeaderTwo = () => {
                         aria-haspopup="true"
                         aria-expanded="false"
                       >
-                         {t("home")}
-
+                         {t("features")}
                       </a> */}
-                      {/* <ul className="submenu dropdown-menu">
+                    {/* <ul className="submenu dropdown-menu">
                         <li>
                           <NavLink to="/about">About</NavLink>
                         </li>
@@ -452,9 +470,19 @@ const HeaderTwo = () => {
                       >
                         {t("blog")}
                       </a>
-                    
-                    </li>
-                    <li className="menu-item-has-children">
+                      <ul className="submenu dropdown-menu">
+                        <li>
+                          <NavLink to="/blog">Blog</NavLink>
+                        </li>
+                        <li>
+                          <NavLink to="/blog-2">Blog 2</NavLink>
+                        </li>
+                        <li>
+                          <NavLink to="/blog-single">Blog Single</NavLink>
+                        </li>
+                      </ul>
+                    </li> */}
+                    {/* <li className="menu-item-has-children">
                       <a
                         href="#"
                         role="button"
@@ -478,8 +506,8 @@ const HeaderTwo = () => {
                     </li>
                     <li>
                       <NavLink to="/contact">{t("contact")}</NavLink>
-                    </li>*/}
-                  </ul> 
+                    </li> */}
+                  </ul>
                   {/* <Link to="/login" className="login"><i className="icofont-user"></i> <span>LOG IN</span> </Link>
                                     <Link to="/signup" className="signup"><i className="icofont-users"></i> <span>SIGN UP</span></Link> */}
                   <Select
