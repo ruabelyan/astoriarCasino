@@ -4,12 +4,12 @@ import "swiper/css";
 import ScrollToTop from "./component/layout/scrolltop";
 import ErrorPage from "./page/404";
 import AboutPage from "./page/about";
-import BlogPage from "./page/blog";
 import BlogPageTwo from "./page/blog-2";
 import BlogSinglePage from "./page/blog-single";
 import CartPage from "./page/cart-page";
 import ContactPage from "./page/contact";
 import ForPass from "./page/forpass";
+import BlogPage from "./page/gallery";
 import GameList from "./page/game-list";
 import GameListTwo from "./page/game-list2";
 import Home from "./page/home";
@@ -43,7 +43,7 @@ function App() {
         <Route path="signup" element={<SignUp />} />
         <Route path="forpass" element={<ForPass />} />
         <Route path="*" element={<ErrorPage />} />
-        <Route path="blog" element={<BlogPage />} />
+        <Route path="gallery" element={<BlogPage />} />
         <Route path="blog-2" element={<BlogPageTwo />} />
         <Route path="blog-single" element={<BlogSinglePage />} />
         <Route path="shop" element={<ShopPage />} />
