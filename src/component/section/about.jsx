@@ -1,29 +1,32 @@
-import { t } from "i18next";
+import { useMemo } from "react";
 import { useTranslation } from "react-i18next";
-
-const title = "WELCOME TO CASINO";
-const desc =
-  "At Modeltheme, we show only the best websites and portfolios built completely with passion simplicity and creativity!";
 
 const About = () => {
   const { t, i18n } = useTranslation();
-  const aboutList = [
-    {
-      serial: "1",
-      title: `${t("registerToday")}`,
-      desc: "Distinctively provide acces mutfuncto users whereas communicate leveraged services",
-    },
-    {
-      serial: "2",
-      title: `${t("depositCash")}`,
-      desc: "Distinctively provide acces mutfuncto users whereas communicate leveraged services",
-    },
-    {
-      serial: "3",
-      title: `${t("startGambling")}`,
-      desc: "Distinctively provide acces mutfuncto users whereas communicate leveraged services",
-    },
-  ];
+
+  const title = t("welcomeToCasino");
+  const desc = t("aboutSubTitle");
+
+  const aboutList = useMemo(() => {
+    return [
+      {
+        serial: "1",
+        title: `${t("registerToday")}`,
+        desc: t("registerTodaySubtitle"),
+      },
+      {
+        serial: "2",
+        title: `${t("depositCash")}`,
+        desc: t("depositCashSubtitle"),
+      },
+      {
+        serial: "3",
+        title: `${t("startGambling")}`,
+        desc: t("startGamblingSubtitle"),
+      },
+    ];
+  }, [t]);
+
   return (
     <section className="about-section style2 pb-0">
       <div className="container">

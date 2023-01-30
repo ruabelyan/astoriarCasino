@@ -1,43 +1,49 @@
+import { useMemo } from "react";
+import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import { Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-const bannerList = [
-  {
-    bgImg: "assets/images/banner/bg.jpg",
-    titleh3: "the best website",
-    titleh2: "Genuine Money Transaction",
-    titleh1: "Online Casino",
-    desc: "Assertively communicate an expanded array of mindshare rather than diverse technologies for magnetic applications eamlessly virtual then Conveniently monetize synergistic human capital",
-    btnText: "join us today",
-  },
-  {
-    bgImg: "assets/images/banner/bg-2.jpg",
-    titleh3: "the best website",
-    titleh2: "Genuine Money Transaction",
-    titleh1: "Online Casino",
-    desc: "Assertively communicate an expanded array of mindshare rather than diverse technologies for magnetic applications eamlessly virtual then Conveniently monetize synergistic human capital",
-    btnText: "join us today",
-  },
-  {
-    bgImg: "assets/images/banner/bg-3.jpg",
-    titleh3: "the best website",
-    titleh2: "Genuine Money Transaction",
-    titleh1: "Online Casino",
-    desc: "Assertively communicate an expanded array of mindshare rather than diverse technologies for magnetic applications eamlessly virtual then Conveniently monetize synergistic human capital",
-    btnText: "join us today",
-  },
-  {
-    bgImg: "assets/images/banner/bg-4.jpg",
-    titleh3: "the best website",
-    titleh2: "Genuine Money Transaction",
-    titleh1: "Online Casino",
-    desc: "Assertively communicate an expanded array of mindshare rather than diverse technologies for magnetic applications eamlessly virtual then Conveniently monetize synergistic human capital",
-    btnText: "join us today",
-  },
-];
-
 const BannerTwo = () => {
+  const { t, i18n } = useTranslation();
+
+  const bannerList = useMemo(() => {
+    return [
+      {
+        bgImg: "assets/images/banner/bg.jpg",
+        titleh3: t("bannersList.1.titleh3"),
+        titleh2: t("bannersList.1.titleh2"),
+        titleh1: t("bannersList.1.titleh1"),
+        desc: t("bannersList.1.desc"),
+        btnText: t("bannersList.1.btnText"),
+      },
+      {
+        bgImg: "assets/images/banner/bg.jpg",
+        titleh3: t("bannersList.2.titleh3"),
+        titleh2: t("bannersList.2.titleh2"),
+        titleh1: t("bannersList.2.titleh1"),
+        desc: t("bannersList.2.desc"),
+        btnText: t("bannersList.2.btnText"),
+      },
+      {
+        bgImg: "assets/images/banner/bg.jpg",
+        titleh3: t("bannersList.3.titleh3"),
+        titleh2: t("bannersList.3.titleh2"),
+        titleh1: t("bannersList.3.titleh1"),
+        desc: t("bannersList.3.desc"),
+        btnText: t("bannersList.3.btnText"),
+      },
+      {
+        bgImg: "assets/images/banner/bg.jpg",
+        titleh3: t("bannersList.4.titleh3"),
+        titleh2: t("bannersList.4.titleh2"),
+        titleh1: t("bannersList.4.titleh1"),
+        desc: t("bannersList.4.desc"),
+        btnText: t("bannersList.4.btnText"),
+      },
+    ];
+  }, [t]);
+
   return (
     <div className="banner__slider overflow-hidden">
       <div className="swiper-wrapper">

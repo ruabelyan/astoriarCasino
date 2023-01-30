@@ -3,29 +3,6 @@ import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import RatingTwo from "../sidebar/rating-2";
 
-const desc =
-  "Upropriate brand economca sound technolog after covalent technology enable prospective wastng markets whereas propriate and brand economca sound technolog";
-const blogTitle = "Top jackpot games";
-const newsTitle = "Our Newsletter";
-const newsDesc = "Casino esports organization supported by community leaders";
-
-const socialList = [
-  {
-    imgUrl: "assets/images/match/social-1.png",
-    imgAlt: "social",
-    siteLink: "#",
-  },
-  {
-    imgUrl: "assets/images/match/social-2.png",
-    imgAlt: "social",
-    siteLink: "#",
-  },
-  {
-    imgUrl: "assets/images/match/social-3.png",
-    imgAlt: "social",
-    siteLink: "#",
-  },
-];
 
 const blogList = [
   {
@@ -53,6 +30,31 @@ const blogList = [
 
 const Footer = () => {
   const { t, i18n } = useTranslation();
+
+
+  const desc = t('footerText')
+const blogTitle = t("topJackpotGames");
+const newsTitle = t("ourNewsletter");
+const newsDesc = t("casinoesports");
+
+const socialList = [
+  {
+    imgUrl: "assets/images/match/social-1.png",
+    imgAlt: "social",
+    siteLink: "#",
+  },
+  {
+    imgUrl: "assets/images/match/social-2.png",
+    imgAlt: "social",
+    siteLink: "#",
+  },
+  {
+    imgUrl: "assets/images/match/social-3.png",
+    imgAlt: "social",
+    siteLink: "#",
+  },
+];
+
 
   const infoList = useMemo(() => {
     return [

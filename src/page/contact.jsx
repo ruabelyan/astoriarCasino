@@ -9,29 +9,31 @@ const infoTitle = "We're Always Eager To Hear From You!";
 const conTitle =
   "Fill The Form Below So We Can Get To Know You And Your Needs Better.";
 
-const infoList = [
-  {
-    imgUrl: "assets/images/contact/icon/01.png",
-    imgAlt: "contact-thumb",
-    title: "Office Address",
-    desc: "1201 park street, Fifth Avenue",
-  },
-  {
-    imgUrl: "assets/images/contact/icon/02.png",
-    imgAlt: "contact-thumb",
-    title: "Phone number",
-    desc: "+22698 745 632,02 982 745",
-  },
-  {
-    imgUrl: "assets/images/contact/icon/03.png",
-    imgAlt: "contact-thumb",
-    title: "Send Email",
-    desc: "yourmail@gmil.com",
-  },
-];
+
 
 const ContactPage = () => {
   const { t, i18n } = useTranslation();
+
+  const infoList = [
+    {
+      imgUrl: "assets/images/contact/icon/01.png",
+      imgAlt: "contact-thumb",
+      title: "Office Address",
+      desc: "1201 park street, Fifth Avenue",
+    },
+    {
+      imgUrl: "assets/images/contact/icon/02.png",
+      imgAlt: "contact-thumb",
+      title: "Phone number",
+      desc: "+22698 745 632,02 982 745",
+    },
+    {
+      imgUrl: "assets/images/contact/icon/03.png",
+      imgAlt: "contact-thumb",
+      title: "Send Email",
+      desc: "yourmail@gmil.com",
+    },
+  ];
 
   const [formStatus, setFormStatus] = React.useState("Send our Message");
   const onSubmit = (e) => {
