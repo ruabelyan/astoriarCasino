@@ -69,7 +69,7 @@ const Footer = () => {
       {
         imgUrl: "assets/images/footer/icons/03.png",
         imgAlt: "icon",
-        text: `${t("address")} : 30 North West New York"`,
+        text: `${t("address")} : 30 Yerevan"`,
       },
     ];
   }, []);

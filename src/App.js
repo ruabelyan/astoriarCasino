@@ -25,7 +25,6 @@ import TournamentPage from "./page/tournament";
 
 function App() {
   
-  console.log('s')
   return (
     <BrowserRouter>
       <ScrollToTop />
