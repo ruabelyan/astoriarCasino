@@ -77,7 +77,7 @@ const Footer = () => {
   return (
     <footer
       className="footer-section"
-      style={{ backgroundImage: "url(/assets/images/footer/bg.jpg)" }}
+      style={{ backgroundImage: "url(/assets/images/footer/bg3.jpg)" }}
     >
       <div className="footer-top">
         <div className="container">

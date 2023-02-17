@@ -6,7 +6,7 @@ const PageHeader = ({title, curPage}) => {
   const { t, i18n } = useTranslation();
 
     return (
-        <section className="pageheader-section" style={{backgroundImage: "url(/assets/images/pageheader/bg.jpg)"}}>
+        <section className="pageheader-section" style={{backgroundImage: "url('https://images.unsplash.com/photo-1515687652280-bf0bb698562a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80')"}}>
             <div className="container">
                 <div className="section-wrapper text-center text-uppercase">
                     <h2 className="pageheader-title">{title}</h2>

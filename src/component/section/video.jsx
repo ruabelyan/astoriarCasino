@@ -40,7 +40,7 @@ const videoListTwo = [
 
 const Video = () => {
     return (
-        <div className="video-section padding-top padding-bottom bg-attachment" style={{backgroundImage: "url(/assets/images/video/bg.jpg)"}}>
+        <div className="video-section padding-top padding-bottom bg-attachment" style={{backgroundImage: "url(/assets/images/video/bg1.jpg)"}}>
             <div className="container">
                 <div className="section-header">
                     <h2>{title}</h2>

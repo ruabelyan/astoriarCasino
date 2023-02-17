@@ -19,7 +19,7 @@ const BlogSinglePage = () => {
         <Fragment>
             <Header />
             <PageHeader title={'Serenity hassir taken posseson...'} curPage={'Blog Details'} />
-            <div className="blog-section blog-single padding-top padding-bottom aside-bg">
+            <div className="blog-section blog-single padding-top padding-bottom">
                 <div className="container">
                     <div className="section-wrapper">
                         <div className="row justify-content-center pb-15">

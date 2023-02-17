@@ -375,7 +375,7 @@ const HeaderTwo = () => {
                       <NavLink to="/news">{t("news")}</NavLink>
                     </li>
                     <li>
-                      <NavLink to="/blog">{t("gallery")}</NavLink>
+                      <NavLink to="/gallery">{t("gallery")}</NavLink>
                     </li>
                     <li>
                       <NavLink to="/about">{t("about")}</NavLink>
@@ -383,121 +383,8 @@ const HeaderTwo = () => {
                     <li>
                       <NavLink to="/contact">{t("contact")}</NavLink>
                     </li>
-                    {/* <li className="menu-item-has-children">
-                      <a
-                        href="#"
-                        role="button"
-                        data-bs-toggle="dropdown"
-                        aria-haspopup="true"
-                        aria-expanded="false"
-                      >
-                        Home
-                      </a>
-                      <ul className="submenu dropdown-menu">
-                        <li>
-                          <NavLink to="/">Home Page One</NavLink>
-                        </li>
-                        <li>
-                          <NavLink to="/index-2">Home Page Two</NavLink>
-                        </li>
-                      </ul>
-                    </li> */}
-                    {/* <li className="menu-item-has-children">
-                      <a
-                        href="#"
-                        role="button"
-                        data-bs-toggle="dropdown"
-                        aria-haspopup="true"
-                        aria-expanded="false"
-                      >
-                         {t("features")}
-                      </a> */}
-                    {/* <ul className="submenu dropdown-menu">
-                        <li>
-                          <NavLink to="/about">About</NavLink>
-                        </li>
-                        <li>
-                          <NavLink to="/jaqpot">Casino Jackpot</NavLink>
-                        </li>
-                        <li>
-                          <NavLink to="/game-list">game list 1</NavLink>
-                        </li>
-                        <li>
-                          <NavLink to="/game-list2">game list 2</NavLink>
-                        </li>
-                        <li>
-                          <NavLink to="/tournament">Tournament</NavLink>
-                        </li>
-                        <li>
-                          <NavLink to="/partners">partners</NavLink>
-                        </li>
-                        <li>
-                          <NavLink to="/pricing-plan">Pricing Plan</NavLink>
-                        </li>
-                        <li>
-                          <NavLink to="/login">login</NavLink>
-                        </li>
-                        <li>
-                          <NavLink to="/signup">signup</NavLink>
-                        </li>
-                        <li>
-                          <NavLink to="/forpass">Forget Password</NavLink>
-                        </li>
-                        <li>
-                          <NavLink to="/404">404 Page</NavLink>
-                        </li>
-                      </ul> */}
-                    {/* </li> */}
-                    {/* <li className="menu-item-has-children">
-                      <a
-                        href="#"
-                        role="button"
-                        data-bs-toggle="dropdown"
-                        aria-haspopup="true"
-                        aria-expanded="false"
-                      >
-                        {t("blog")}
-                      </a>
-                      <ul className="submenu dropdown-menu">
-                        <li>
-                          <NavLink to="/blog">Blog</NavLink>
-                        </li>
-                        <li>
-                          <NavLink to="/blog-2">Blog 2</NavLink>
-                        </li>
-                        <li>
-                          <NavLink to="/blog-single">Blog Single</NavLink>
-                        </li>
-                      </ul>
-                    </li> */}
-                    {/* <li className="menu-item-has-children">
-                      <a
-                        href="#"
-                        role="button"
-                        data-bs-toggle="dropdown"
-                        aria-haspopup="true"
-                        aria-expanded="false"
-                      >
-                        {t("shop")}
-                      </a>
-                      <ul className="submenu dropdown-menu">
-                        <li>
-                          <NavLink to="/shop">shop</NavLink>
-                        </li>
-                        <li>
-                          <NavLink to="/shop-single">Shop Details</NavLink>
-                        </li>
-                        <li>
-                          <NavLink to="/cart-page">Cart Page</NavLink>
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <NavLink to="/contact">{t("contact")}</NavLink>
-                    </li> */}
+                   
                   </ul>
-                  {/* <Link to="/login" className="login"><i className="icofont-user"></i> <span>LOG IN</span> </Link>
-                                    <Link to="/signup" className="signup"><i className="icofont-users"></i> <span>SIGN UP</span></Link> */}
                   <Select
                     value={selected}
                     onChange={handleChange}
