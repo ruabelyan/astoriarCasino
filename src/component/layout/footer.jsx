@@ -64,7 +64,7 @@ const Footer = () => {
       {
         imgUrl: "assets/images/footer/icons/02.png",
         imgAlt: "icon",
-        text: `${t("email")} : youremail@gmail.com"`,
+        text: `${t("email")} :  info@astoriar.am"`,
       },
       {
         imgUrl: "assets/images/footer/icons/03.png",
