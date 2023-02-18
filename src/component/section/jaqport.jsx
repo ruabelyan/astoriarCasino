@@ -1,6 +1,5 @@
 
-import {Link} from "react-router-dom";
-import CountDown from "../layout/countdown";
+import { Link } from "react-router-dom";
 
 const title = "CASINO JACKPOTS";
 const desc = "At Modeltheme, we show only the best websites and portfolios built completely with passion, simplicity and creativity !";
@@ -181,7 +180,7 @@ const Jaqport = () => {
                                             <h4>{upTitle}</h4>
                                         </div>
                                         <div className="jaqport__title-gametime">
-                                            <CountDown />
+                                            {/* <CountDown /> */}
                                         </div>
                                     </div>
                                     <div className="jaqport__body">

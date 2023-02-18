@@ -7,7 +7,6 @@ import Collection from "../component/section/collection";
 import CollectionTwo from "../component/section/collection-2";
 import Faq from "../component/section/faq";
 import Game from "../component/section/game";
-import GameTwo from "../component/section/game-2";
 import Jaqport from "../component/section/jaqport";
 import Testimonial from "../component/section/testimonial";
 
@@ -24,7 +23,7 @@ const Home = () => {
       <CollectionTwo />
       <Game />
       <Faq />
-      <GameTwo />
+      {/* <GameTwo /> */}
       <Testimonial />
       <Footer />
     </Fragment>

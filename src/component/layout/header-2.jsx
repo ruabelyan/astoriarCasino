@@ -345,7 +345,7 @@ const HeaderTwo = () => {
 
   let activeStyle = {
     textDecoration: "underline",
-    color: "rgb(234 185 28 / 88%)",
+    color: "#d82d2a",
     // animation: "lab_zoominout 2s linear infinite",
   };
 

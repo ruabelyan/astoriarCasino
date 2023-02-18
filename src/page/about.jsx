@@ -4,7 +4,6 @@ import Header from "../component/layout/header-2";
 import PageHeader from "../component/layout/page-header";
 import AboutTwo from "../component/section/about-2";
 import Faq from "../component/section/faq";
-import Game from "../component/section/game";
 
 const AboutPage = () => {
     return (
@@ -12,7 +11,7 @@ const AboutPage = () => {
             <Header />
             <PageHeader title={'about Casino'} curPage={'About Us'} />
             <AboutTwo />
-            <Game />
+            {/* <Game /> */}
             <Faq />
             <Footer />
         </Fragment>
