@@ -73,7 +73,7 @@
                     height: 68px;
                     // margin: 0 5px;
                     margin-top: 4px;
-                    // background-image: linear-gradient(to bottom, #ffffff, #f1d5fa, #faa2dc, #ff66a2, #ff0052);
+                    // background-image: linear-gradient(to bottom, #ffffff, #f1d5fa, #faa2dc, #ff66a2, #d82d2a);
                     @include border-radius(3px);
                 }
                 h3 {
@@ -86,7 +86,7 @@
                     .odometer-digit {
                         width: 50px;
                         margin: 0 5px;
-                        background-image: linear-gradient(to bottom, #ffffff, #f1d5fa, #faa2dc, #ff66a2, #ff0052);
+                        background-image: linear-gradient(to bottom, #ffffff, #f1d5fa, #faa2dc, #ff66a2, #d82d2a);
                         @include border-radius(3px);
                         text-align: center;
                         .odometer-digit-inner {

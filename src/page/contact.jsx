@@ -80,7 +80,7 @@ const ContactPage = () => {
       <div className="contact-section">
         <div
           className="contact-top padding-top padding-bottom bg-attachment"
-          style={{ backgroundImage: "url(/assets/images/video/bg.jpg)" }}
+          style={{ backgroundImage: "url('https://images.unsplash.com/photo-1525018667593-176858caed6a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1734&q=80')" }}
         >
           <div className="container">
             <div className="row justify-content-center">

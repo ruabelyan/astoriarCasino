@@ -66,12 +66,12 @@ const socialList = [
       {
         imgUrl: "assets/images/footer/icons/02.png",
         imgAlt: "icon",
-        text: `${t("email")} : youremail@gmail.com"`,
+        text: `${t("email")} :  info@astoriar.am"`,
       },
       {
         imgUrl: "assets/images/footer/icons/03.png",
         imgAlt: "icon",
-        text: `${t("address")} : 30 North West New York"`,
+        text: `${t("address")} : 30 Yerevan"`,
       },
     ];
   }, []);
@@ -79,7 +79,7 @@ const socialList = [
   return (
     <footer
       className="footer-section"
-      style={{ backgroundImage: "url(/assets/images/footer/bg.jpg)" }}
+      style={{ backgroundImage: "url(/assets/images/footer/bg3.jpg)" }}
     >
       <div className="footer-top">
         <div className="container">

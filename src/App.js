@@ -24,7 +24,6 @@ import SignUp from "./page/signup";
 import TournamentPage from "./page/tournament";
 
 function App() {
- 
   
   return (
     <BrowserRouter>

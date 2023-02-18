@@ -343,6 +343,12 @@ const HeaderTwo = () => {
     }
   }, [defaultLang]);
 
+  let activeStyle = {
+    textDecoration: "underline",
+    color: "rgb(234 185 28 / 88%)",
+    // animation: "lab_zoominout 2s linear infinite",
+  };
+
   return (
     <header
       className={`header-section style2 ${
@@ -369,23 +375,58 @@ const HeaderTwo = () => {
                 <div className="menu-area">
                   <ul className={`menu ${menuToggle ? "active" : ""}`}>
                     <li>
-                      <NavLink to="/">{t("home")}</NavLink>
+                      <NavLink
+                        style={({ isActive }) =>
+                          isActive ? activeStyle : undefined
+                        }
+                        to="/"
+                      >
+                        {t("home")}
+                      </NavLink>
                     </li>
                     <li>
-                      <NavLink to="/news">{t("news")}</NavLink>
+                      <NavLink
+                        style={({ isActive }) =>
+                          isActive ? activeStyle : undefined
+                        }
+                        to="/news"
+                      >
+                        {t("news")}
+                      </NavLink>
                     </li>
                     <li>
-                      <NavLink to="/gallery">{t("gallery")}</NavLink>
+                      <NavLink
+                        style={({ isActive }) =>
+                          isActive ? activeStyle : undefined
+                        }
+                        to="/gallery"
+                      >
+                        {t("gallery")}
+                      </NavLink>
                     </li>
                     <li>
-                      <NavLink to="/about">{t("about")}</NavLink>
+                      <NavLink
+                        style={({ isActive }) =>
+                          isActive ? activeStyle : undefined
+                        }
+                        to="/about"
+                      >
+                        {t("about")}
+                      </NavLink>
                     </li>
                     <li>
-                      <NavLink to="/contact">{t("contact")}</NavLink>
+                      <NavLink
+                        style={({ isActive }) =>
+                          isActive ? activeStyle : undefined
+                        }
+                        to="/contact"
+                      >
+                        {t("contact")}
+                      </NavLink>
                     </li>
-                   
                   </ul>
                   <Select
+                    style={{ background: "transparent" }}
                     value={selected}
                     onChange={handleChange}
                     options={options}
