@@ -1,5 +1,11 @@
 /*================*** Header Section Start Here     ***===================*/
 
+#custom-select-styles {
+  //   background: transparent;
+    border: 2px solid red !important;
+  }
+  
+
 .header-section {
   background: rgba($primary-color, $alpha: 0.3);
   backdrop-filter: blur(20px);

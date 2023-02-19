@@ -2,11 +2,73 @@ import React, { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Link, NavLink } from "react-router-dom";
 import Select from "react-select";
+import { style } from "typestyle";
 import logo from "../../assets/images/logo/logo.png";
 
 const HeaderTwo = () => {
   const [menuToggle, setMenuToggle] = useState(false);
   const [headerFiexd, setHeaderFiexd] = useState(false);
+
+  const niceColors = style({
+    transition: "color .2s",
+    color: "blue",
+    $nest: {
+      transition: "ease-out 0.3s",
+      "&::after": {
+        position: "absolute",
+        content: `' '`,
+        height: 0,
+        top: 0,
+        right: 0,
+        width: "50%",
+        backgroundColor: "#db8987",
+        transition: "all 0.35s ease",
+        zIndex: -1,
+      },
+      "&::before": {
+        position: "absolute",
+        content: `' '`,
+        width: "50%",
+        backgroundColor: "#db8987",
+        left: 0,
+        height: 0,
+        top: 0,
+        zIndex: -1,
+        "-webkit-transition": "all 0.4s ease",
+        "-moz-transition": "all 0.4s ease",
+        "-o-transition": "all 0.4s ease",
+        transition: "all 0.4s ease",
+      },
+
+      "&:hover": {
+        color: "white",
+        "&::after": {
+          color: "rgb(216, 45, 42)",
+          position: "absolute",
+          content: `' '`,
+          height: "100%",
+          top: 0,
+          backgroundColor: " #d82d2a",
+          " -webkit-transition": "all .35s ease",
+          " -moz-transition": "all .35s ease",
+          " -o-transition": "all .35s ease",
+          transition: "all .35s ease",
+        },
+        "&::before": {
+          color: "rgb(216, 45, 42)",
+          position: "absolute",
+          content: `' '`,
+          height: "100%",
+          top: 0,
+          backgroundColor: " #d82d2a",
+          " -webkit-transition": "all .65s ease",
+          " -moz-transition": "all .65s ease",
+          " -o-transition": "all .65s ease",
+          transition: "all .65s ease",
+        },
+      },
+    },
+  });
 
   const { t, i18n } = useTranslation();
 
@@ -313,6 +375,7 @@ const HeaderTwo = () => {
       ),
     },
   ];
+
   const defaultLang = localStorage.getItem("language");
   console.log(defaultLang);
 
@@ -321,7 +384,6 @@ const HeaderTwo = () => {
     label: options.find((option) => option.value === defaultLang)?.label,
   });
 
-  console.log(selected);
   const handleChange = (event) => {
     setSelected(event);
     i18n.changeLanguage(event.value);
@@ -344,9 +406,9 @@ const HeaderTwo = () => {
   }, [defaultLang]);
 
   let activeStyle = {
-    textDecoration: "underline",
-    color: "#d82d2a",
-    // animation: "lab_zoominout 2s linear infinite",
+    color: "white",
+    animation: "custom 2s linear infinite",
+    background: "#d82d2a",
   };
 
   return (
@@ -376,6 +438,7 @@ const HeaderTwo = () => {
                   <ul className={`menu ${menuToggle ? "active" : ""}`}>
                     <li>
                       <NavLink
+                        className={niceColors}
                         style={({ isActive }) =>
                           isActive ? activeStyle : undefined
                         }
@@ -386,6 +449,7 @@ const HeaderTwo = () => {
                     </li>
                     <li>
                       <NavLink
+                        className={niceColors}
                         style={({ isActive }) =>
                           isActive ? activeStyle : undefined
                         }
@@ -396,6 +460,7 @@ const HeaderTwo = () => {
                     </li>
                     <li>
                       <NavLink
+                        className={niceColors}
                         style={({ isActive }) =>
                           isActive ? activeStyle : undefined
                         }
@@ -406,6 +471,7 @@ const HeaderTwo = () => {
                     </li>
                     <li>
                       <NavLink
+                        className={niceColors}
                         style={({ isActive }) =>
                           isActive ? activeStyle : undefined
                         }
@@ -416,6 +482,7 @@ const HeaderTwo = () => {
                     </li>
                     <li>
                       <NavLink
+                        className={niceColors}
                         style={({ isActive }) =>
                           isActive ? activeStyle : undefined
                         }
@@ -425,12 +492,13 @@ const HeaderTwo = () => {
                       </NavLink>
                     </li>
                   </ul>
+
                   <Select
-                    style={{ background: "transparent" }}
                     value={selected}
                     onChange={handleChange}
                     options={options}
                   />
+
                   <div
                     className={`header-bar d-lg-none ${
                       menuToggle ? "active" : ""
