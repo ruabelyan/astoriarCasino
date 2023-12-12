@@ -9,8 +9,6 @@ const infoTitle = "We're Always Eager To Hear From You!";
 const conTitle =
   "Fill The Form Below So We Can Get To Know You And Your Needs Better.";
 
-
-
 const ContactPage = () => {
   const { t, i18n } = useTranslation();
 
@@ -19,19 +17,19 @@ const ContactPage = () => {
       imgUrl: "assets/images/contact/icon/01.png",
       imgAlt: "contact-thumb",
       title: "Office Address",
-      desc: "1201 park street, Fifth Avenue",
+      desc: "ք.Ծաղկաձոր , սարալանջի փ. 2",
     },
     {
       imgUrl: "assets/images/contact/icon/02.png",
       imgAlt: "contact-thumb",
       title: "Phone number",
-      desc: "+22698 745 632,02 982 745",
+      desc: "+37494966669",
     },
     {
       imgUrl: "assets/images/contact/icon/03.png",
       imgAlt: "contact-thumb",
       title: "Send Email",
-      desc: "yourmail@gmil.com",
+      desc: "info@astoriar.am",
     },
   ];
 
@@ -80,7 +78,10 @@ const ContactPage = () => {
       <div className="contact-section">
         <div
           className="contact-top padding-top padding-bottom bg-attachment"
-          style={{ backgroundImage: "url('https://images.unsplash.com/photo-1525018667593-176858caed6a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1734&q=80')" }}
+          style={{
+            backgroundImage:
+              "url('https://images.unsplash.com/photo-1525018667593-176858caed6a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1734&q=80')",
+          }}
         >
           <div className="container">
             <div className="row justify-content-center">

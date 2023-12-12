@@ -3,7 +3,6 @@ import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import RatingTwo from "../sidebar/rating-2";
 
-
 const blogList = [
   {
     imgUrl: "assets/images/footer/01.jpg",
@@ -31,47 +30,45 @@ const blogList = [
 const Footer = () => {
   const { t, i18n } = useTranslation();
 
+  const desc = t("footerText");
+  const blogTitle = t("topJackpotGames");
+  const newsTitle = t("ourNewsletter");
+  const newsDesc = t("casinoesports");
 
-  const desc = t('footerText')
-const blogTitle = t("topJackpotGames");
-const newsTitle = t("ourNewsletter");
-const newsDesc = t("casinoesports");
-
-const socialList = [
-  {
-    imgUrl: "assets/images/match/social-1.png",
-    imgAlt: "social",
-    siteLink: "#",
-  },
-  {
-    imgUrl: "assets/images/match/social-2.png",
-    imgAlt: "social",
-    siteLink: "#",
-  },
-  {
-    imgUrl: "assets/images/match/social-3.png",
-    imgAlt: "social",
-    siteLink: "#",
-  },
-];
-
+  const socialList = [
+    {
+      imgUrl: "assets/images/match/social-1.png",
+      imgAlt: "social",
+      siteLink: "#",
+    },
+    {
+      imgUrl: "assets/images/match/social-2.png",
+      imgAlt: "social",
+      siteLink: "#",
+    },
+    {
+      imgUrl: "assets/images/match/social-3.png",
+      imgAlt: "social",
+      siteLink: "#",
+    },
+  ];
 
   const infoList = useMemo(() => {
     return [
       {
         imgUrl: "assets/images/footer/icons/01.png",
         imgAlt: "icon",
-        text: `${t("phoneNumber")} : +88012 345 678 912`,
+        text: `+37494966669`,
       },
       {
         imgUrl: "assets/images/footer/icons/02.png",
         imgAlt: "icon",
-        text: `${t("email")} :  info@astoriar.am"`,
+        text: `info@astoriar.am`,
       },
       {
         imgUrl: "assets/images/footer/icons/03.png",
         imgAlt: "icon",
-        text: `${t("address")} : 30 Yerevan"`,
+        text: `ք.Ծաղկաձոր , սարալանջի փ. 2`,
       },
     ];
   }, []);
@@ -107,10 +104,10 @@ const socialList = [
             <div className="col-lg-4 col-md-6 col-12">
               <div className="footer-middle-item-wrapper">
                 <div className="footer-middle-item mb-lg-0">
-                  <div className="fm-item-title mb-4">
+                  {/* <div className="fm-item-title mb-4">
                     <img src="assets/images/logo/logo.png" alt="logo" />
-                  </div>
-                  <div className="fm-item-content">
+                  </div> */}
+                  {/* <div className="fm-item-content">
                     <p className="mb-4">{desc}</p>
                     <ul className="match-social-list d-flex flex-wrap align-items-center">
                       {socialList.map((val, i) => (
@@ -121,11 +118,11 @@ const socialList = [
                         </li>
                       ))}
                     </ul>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
-            <div className="col-lg-4 col-md-6 col-12">
+            {/* <div className="col-lg-4 col-md-6 col-12">
               <div className="footer-middle-item-wrapper">
                 <div className="footer-middle-item mb-lg-0">
                   <div className="fm-item-title">
@@ -160,8 +157,8 @@ const socialList = [
                   </div>
                 </div>
               </div>
-            </div>
-            <div className="col-lg-4 col-md-6 col-12">
+            </div> */}
+            {/* <div className="col-lg-4 col-md-6 col-12">
               <div className="footer-middle-item-wrapper">
                 <div className="footer-middle-item-3 mb-lg-0">
                   <div className="fm-item-title">
@@ -194,7 +191,7 @@ const socialList = [
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

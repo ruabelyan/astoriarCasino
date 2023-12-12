@@ -92,7 +92,7 @@ const BlogPage = () => {
   return (
     <Fragment>
       <Header />
-      <PageHeader title={t("gallery")} curPage={t("gallery")} />
+      {/* <PageHeader title={t("gallery")} curPage={t("gallery")} /> */}
       <div className="blog-section padding-top padding-bottom">
         <div className="container">
           <div className="section-wrapper">

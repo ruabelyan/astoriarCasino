@@ -6,20 +6,20 @@ import BannerTwo from "../component/section/banner-2";
 import Faq from "../component/section/faq";
 
 const HomeTwo = () => {
-    return (
-        <Fragment>
-            <HeaderTwo />
-            <BannerTwo />
-            <About />
-            {/* <Collection /> */}
-            {/* <Game />
+  return (
+    <Fragment>
+      <HeaderTwo />
+      <BannerTwo />
+      <About />
+      {/* <Collection /> */}
+      {/* <Game />
             <GameTwo />*/}
-            {/* <JaqportTwo />  */}
-            {/* <Testimonial /> */}
-            <Faq />
-            <Footer />
-        </Fragment>
-    );
-}
+      {/* <JaqportTwo />  */}
+      {/* <Testimonial /> */}
+      <Faq />
+      <Footer />
+    </Fragment>
+  );
+};
 
 export default HomeTwo;

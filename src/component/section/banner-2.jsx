@@ -51,7 +51,7 @@ const BannerTwo = () => {
           spaceBetween={20}
           loop={"true"}
           autoplay={{
-            delay: 5000,
+            delay: 8000,
             disableOnInteraction: false,
           }}
           modules={[Autoplay]}
@@ -70,11 +70,11 @@ const BannerTwo = () => {
                         <h1>{val.titleh1}</h1>
                         <h2>{val.titleh2}</h2>
                         <p>{val.desc}</p>
-                        <Link to="/login" className="default-button">
+                        {/* <Link to="/login" className="default-button">
                           <span>
                             {val.btnText} <i className="icofont-play-alt-1"></i>
                           </span>{" "}
-                        </Link>
+                        </Link> */}
                       </div>
                     </div>
                   </div>

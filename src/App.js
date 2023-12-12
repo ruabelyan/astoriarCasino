@@ -5,6 +5,7 @@ import ScrollToTop from "./component/layout/scrolltop";
 import ErrorPage from "./page/404";
 import AboutPage from "./page/about";
 import BlogSinglePage from "./page/blog-single";
+import Gallery from "./page/gallery";
 import ContactPage from "./page/contact";
 import GameListTwo from "./page/game-list2";
 import HomeTwo from "./page/home-2";
@@ -28,7 +29,7 @@ function App() {
         {/* <Route path="signup" element={<SignUp />} /> */}
         {/* <Route path="forpass" element={<ForPass />} /> */}
         <Route path="*" element={<ErrorPage />} />
-        {/* <Route path="blog-2" element={<BlogPageTwo />} /> */}
+        <Route path="blog" element={<Gallery />} />
         <Route path="news" element={<BlogSinglePage />} />
         {/* <Route path="shop" element={<ShopPage />} /> */}
         {/* <Route path="shop-single" element={<ShopSinglePage />} /> */}

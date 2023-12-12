@@ -151,9 +151,8 @@ export const resources = {
           btnText: "միացե՛ք մեզ",
         },
       },
-      welcomeToCasino: "Բարի գալուստ Կազինո",
-      aboutSubTitle:
-        "Modeltheme-ում մենք ցույց ենք տալիս միայն լավագույն կայքերն ու պորտֆոլիոները, որոնք ստեղծվել են ամբողջությամբ կրքով, պարզությամբ և ստեղծագործականությամբ:",
+      welcomeToCasino: "ASTORIA.R",
+      aboutSubTitle: "ժամանցի ժամանակից  կենտրոն",
       registerToday: "ԳՐԱՆՑՎԵՔ ԱՅՍՕՐ",
       depositCash: "ԱՎԱՆԴԻ ԿԱՆԽԻԿ",
       startGambling: "ՍԿՍԵՔ ԽԱՂԱԼ",
@@ -174,15 +173,11 @@ export const resources = {
       email: "Էլ Հասցե",
       footerText:
         "Կովալենտային տեխնոլոգիայից հետո համապատասխան ապրանքանիշի economca ձայնային տեխնոլոգիան հնարավորություն է տալիս հեռանկարային թափոնների շուկաներին, մինչդեռ պատշաճ և բրենդային economca ձայնային տեխնոլոգիան",
-        topJackpotGames: "Լավագույն ջեքփոթ խաղեր",
-        ourNewsletter: "Մեր տեղեկագիրը",
-        casinoesports: "Կազինո esports կազմակերպություն համայնքի ղեկավարների աջակցությամբ",
-  
-        
-
-
+      topJackpotGames: "Լավագույն ջեքփոթ խաղեր",
+      ourNewsletter: "Մեր տեղեկագիրը",
+      casinoesports:
+        "Կազինո esports կազմակերպություն համայնքի ղեկավարների աջակցությամբ",
     },
-
   },
   ir: {
     translation: {
